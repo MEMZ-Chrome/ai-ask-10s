@@ -20,7 +20,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      # Remotion 在 Linux CI 上需要 Chromium 系统依赖；--with-deps 会一并装好。
+      # Remotion 在 Linux CI 上需要 Chromium 系统依赖（浏览器本体由渲染步骤自动下载）。
       - name: Install Chrome dependencies
         run: npx remotion browser ensure --with-deps
 
