@@ -5,3 +5,6 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# 完整字体（35 MB，本机用它切出 public/fonts/web/*.woff2）
+public/fonts/*.ttf
